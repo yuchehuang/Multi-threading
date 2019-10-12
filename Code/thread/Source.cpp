@@ -126,7 +126,7 @@ int main(void)
 	thread_input();
 	assign();
 	//print_input();
-	//number_of_each_thread_calculated_Table();
+	number_of_each_thread_calculated_Table();
 	
 //--Threading program & confirm every thread can create  within the limitation---//
 	HANDLE *thread = new HANDLE[thread_num];
@@ -134,7 +134,9 @@ int main(void)
 	for (int i = 0; i < thread_num; i++)
 	{
 		thread[i] = CreateThread(NULL, 0, Thread_dynamic, (void*)TLB[3 * i], 0x00000004, &thread_id[i]); //(void*) to make variable compactable to the function	
-		if (Check_error(thread[i], thread_id[i], i))				//if one of thread occurs error change the total number of thread
+		
+		//if one of thread occurs error change the total number of thread
+		if (Check_error(thread[i], thread_id[i], i))
 		{
 			thread_num = i - 1;
 			printf("Only can create %d of Threads\n", thread_num);
@@ -151,7 +153,7 @@ int main(void)
 	for (int i = 0; i < thread_num; i++)
 		WaitForSingleObject(thread[i], INFINITE);
 	time = clock() - time;
-	//printf("Exetution time: %4f Sec \n", ((double)time) / CLOCKS_PER_SEC);
+	printf("Exetution time: %4f Sec \n", ((double)time) / CLOCKS_PER_SEC);
 	
 	//---------- Release the Thread---------------------//
 	for (int i = 0; i < thread_num; i++)
@@ -173,6 +175,6 @@ int main(void)
 	free(result);
 	//printf("----------------------------------------\n");
 	
-	//system("pause");
+	system("pause");
 	return 0;
 }

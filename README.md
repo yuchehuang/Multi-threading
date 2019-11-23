@@ -14,5 +14,7 @@ The main point to improve the performance of multiplication operation is not onl
 
 ![alt text](https://github.com/yuchehuang/Multiple-threads/blob/master/picture/equally%20assign.PNG)
 
-To estimate the running more accurately, the timer is only triggered during thread executing matrix multiplication. After checking threads and assigning tasks, main program starts the timer while all of threads are set to enable, until all the threads have been marked into finish state. As a result, the executing time can be more accurate and not affected by the other processes in main program. 
+To estimate the operating time of matrix multiplication accurately, the timer is only triggered while thread executing matrix multiplication. After checking threads and assigning tasks, main function enable the timer after all of threads start operating the calculation, until all of them have been marked into finish state. As a result, the executing time can be more accurate and not affected by the other processes in main program. 
 <br/>
+
+## Result

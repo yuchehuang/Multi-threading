@@ -19,6 +19,6 @@ To estimate the operating time of matrix multiplication accurately, the timer is
 
 ## Result
 
-![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/1_thread_size_1000.JPG)
+![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/1_thread_%20size_1000.jpg)
 
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/1000x1000_in_n_thread.jpg)

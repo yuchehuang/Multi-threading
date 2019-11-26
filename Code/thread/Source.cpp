@@ -145,7 +145,7 @@ int main(void)
 			break;
 		}
 	}
-	//--------Enable every Thread to start execute matrix moultiplication---------------//
+	//--------Enable every Thread to start execute matrix multiplication---------------//
 	clock_t time = clock();
 	for (int i = 0; i < thread_num; i++)
 		ResumeThread(thread[i]);

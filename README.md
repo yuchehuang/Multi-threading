@@ -10,7 +10,7 @@ The technique of multi-thread has been widely used for solving multi-task such a
 
 
 ## Methodlolgy
-The main point to improve the performance of multiplication operation is not only increasing the number of threads but also making sure tasks are equality assigned into each thread. With mapping equally, it prevents main thread from waiting long time for one of thread still executing when others have completed their own tasks. Therefore, it leads in a lower CPU utilization and higher executing time. The work allocates tasks to each thread by the total number of elements which depend on the size of matrix. In addition, to observe the multi-threading performance flexibly, dynamic memory allocation is adopted in the program to create the matrixes and threads by difference value of input (as shown as following figure). <br/>
+The main point to improve the performance of multiplication operation is not only increasing the number of threads but also making sure tasks are equality assigned into each thread. With mapping equally, it prevents main thread from waiting long time for one of thread still executing when others have completed their own tasks. Therefore, it leads in a lower CPU utilization and higher executing time. The work allocates tasks to each thread by the total number of elements which depend on the size of matrix. In addition, to observe the multi-threading performance flexibly, dynamic memory allocation is adopted by the program to create the matrixes and threads by difference value of input (as shown as following figure). <br/>
 
 ![alt text](https://github.com/yuchehuang/Multiple-threads/blob/master/picture/equally%20assign.PNG)
 
@@ -19,6 +19,10 @@ To estimate the operating time of matrix multiplication accurately, the timer is
 
 ## Result
 
+The following figure illustrates the 
+
+
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/1_thread_%20size_1000.jpg)
+
 
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/1000x1000_in_n_thread.jpg)

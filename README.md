@@ -19,7 +19,7 @@ To estimate the operating time of matrix multiplication accurately, the timer is
 
 ## Result
 
-The following figure illustrates the 
+The following figure illustrates the matrix multiplication is complemented by only one thread and took up approximately 4 sec to finish the task 
 
 
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/1_thread_%20size_1000.jpg)

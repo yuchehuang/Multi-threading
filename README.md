@@ -31,4 +31,10 @@ The following picture demonstrates an example that using 400 threads to execute 
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/400_thread_size_1000.png)
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/400_thread_size_1000_core.JPG)
 
+By using the number of thread which equal to the physical cores, issue of synchronisation will be elliminated and thread efficiency can be optimised due to there is no more eatra are waiting to execute its task. The result of this experiment is illustrated as following picture which shown there are 93% of timeline in execution status.
+
+![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/8_thread_size_1000.JPG)
+![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/8_thread_size_1000_core.JPG)
+
+
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/1000x1000_in_n_thread.jpg)

@@ -41,6 +41,7 @@ Moreover, this porject illustrates the variation of efficiency that using n^2 th
 <br/>
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/nxn%20in%20n%5E2%20thread.jpg)
 
-The other experiment shows the difference of time-comusing by running the same task in different CPU. According to the picture below, with a large number of logical cores, it implies more and more threads are allowed to be allocated to each core in the same machine cycle.
+The other experiment shows the difference of time-comusing by running the same task in different CPU. According to the picture below,
+with a large number of logical cores (Xeon 2155 CPU, with 10 cores 2 physical threads in each core), it implies more and more threads are allowed to be allocated to each core in the same machine cycle. Therefore, the executing time can be dereased significantly compared with using intel 8550u (4 cores 2 physical threads in each core)
 <br/>
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/1000x1000_in_n_thread.jpg)

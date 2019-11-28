@@ -25,8 +25,10 @@ The following figure illustrates the matrix multiplication is complemented by on
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/1_thread_%20size_1000.jpg)
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/1_thread_size_1000_core.jpg)
 
-By using multi-threading, the ececuteing time decreases dramatically due the task is distributed equally to each thread to execute. However, there is a limitation of using massive thread. The following picture demonstrates an example that using 400 threads to execute the task. The result shows that althrough this strategy occupies almost 100% of CPU resource, each thread has only 3% time to execute the task during the task comparing with 79% in synchronisation. 
+By using multi-threading, the ececuteing time decreases dramatically due the task is distributed equally to each thread to execute. However, there is a limitation of using massive thread. 
+The following picture demonstrates an example that using 400 threads to execute the task. The result shows that althrough this strategy occupies almost 100% of CPU resource, each thread has only 3% time to execute the task comparing with 79% in synchronisation during the task. 
 
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/400_thread_size_1000.png)
+![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/400_thread_size_1000_core.JPG)
 
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/1000x1000_in_n_thread.jpg)

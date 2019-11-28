@@ -19,10 +19,14 @@ To estimate the operating time of matrix multiplication accurately, the timer is
 
 ## Result
 
-The following figure illustrates the matrix multiplication is complemented by only one thread and took up 1/8 of cpu utilisation. Due to the thread can be executed amount 8 physical cores, the task can be acheived without any time-comusing caused by synchronzation.   
+The following figure illustrates the matrix multiplication is complemented by only one thread and took up 1/8 of cpu utilisation. Due to the thread can be executed amount 8 physical cores, the task can be acheived without any time-comusing caused by synchronzation and preemption.   
 
 
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/1_thread_%20size_1000.jpg)
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/1_thread_size_1000_core.jpg)
+
+By using multi-threading, the ececuteing time decreases dramatically due the task is distributed equally to each thread to execute. However, there is a limitation of using massive thread. The following picture demonstrates an example that using 400 threads to execute the task. The result shows that althrough this strategy occupies almost 100% of CPU resource, each thread has only 3% time to execute the task during the task comparing with 79% in synchronisation. 
+
+![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/400_thread_size_1000.png)
 
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/1000x1000_in_n_thread.jpg)

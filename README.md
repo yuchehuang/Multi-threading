@@ -31,13 +31,16 @@ The following picture demonstrates an example that using 400 threads to execute 
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/400_thread_size_1000.png)
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/400_thread_size_1000_core.JPG)
 
-By using the number of thread which equal to the physical cores, the issue of synchronisation will be eliminated and thread efficiency can be optimised due to none of the thread needs to wait for the other thread to finish its task. The result of this experiment is illustrated as the following picture which shown there are 93% of timeline in execution status.<br/>
+By using the number of thread which equal to the physical cores, the issue of synchronisation will be eliminated and thread efficiency can be optimised due to none of the thread needs to wait for the other thread to finish its task. The result of this experiment is illustrated as the following picture which shown there are 93% of timeline in execution status.
+<br/>
 
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/8_thread_size_1000.JPG)
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/8_thread_size_1000_core.JPG)
 
-Moreover, this porject illustrates the variation of efficiency that using n^2 thread to accomplish the task compared with using only one thread. The result indicates that while using the number of thread taht more than physical cores, the gap of time-comsuming increases evidently due to each of thread starts spending time on synchorization. <br/>
+Moreover, this porject illustrates the variation of efficiency that using n^2 thread to accomplish the task compared with using only one thread. The result indicates that while using the number of thread taht more than physical cores, the gap of time-comsuming increases evidently due to each of thread starts spending time on synchorization. 
+<br/>
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/nxn%20in%20n%5E2%20thread.jpg)
 
-The other experiment shows the difference of time-comusing by running the same task in different CPU. According to the picture below, with a large number of logical cores, it implies more and more threads are allowed to be allocated to each core in the same machine cycle.<br/>
+The other experiment shows the difference of time-comusing by running the same task in different CPU. According to the picture below, with a large number of logical cores, it implies more and more threads are allowed to be allocated to each core in the same machine cycle.
+<br/>
 ![alt text](https://github.com/yuchehuang/Multi-threading/blob/master/picture/1000x1000_in_n_thread.jpg)

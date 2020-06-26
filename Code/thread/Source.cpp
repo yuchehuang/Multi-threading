@@ -8,7 +8,6 @@
 int *dynamic_array_1, *dynamic_array_2,*result,*TLB, size, thread_num;
 const unsigned int Table_length=3;
 
-//-----Thread Function-----------------//
 int start_opint_calculate(int threadID)
 {
 	int start_opint = 0;
@@ -29,6 +28,7 @@ int execute_element_number(int order_of_element)
 	return temp;
 }
 
+//-----Thread Function-----------------//
 DWORD WINAPI Thread_dynamic(LPVOID lpParam) 
 {
 	int id = (int)lpParam,temp;
